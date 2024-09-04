@@ -1,0 +1,72 @@
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #2a2a2a, #0a0a0a); /* Gradient background for a sleek look */
+    overflow: hidden;
+    position: relative;
+    font-family: 'Roboto', sans-serif; /* Modern and clean font */
+    color: #E0E0E0;
+}
+
+/* Canvas Styling */
+canvas {
+    border: 8px solid #1e1e1e; /* Slightly lighter border */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8); /* Soft shadow for depth */
+    z-index: 10; /* Ensure canvas is on top */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+canvas:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.9); /* Enhanced shadow on hover */
+}
+
+/* Title Styling */
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px; /* Slightly larger for better impact */
+    font-weight: 50; /* Medium weight for a modern look */
+    color: hsl(120, 6%, 97%); /* Pure white text */
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    border-bottom: 3px solid rgba(147, 248, 189, 0.7); /* Subtle underline effect */
+    padding-bottom: 8px; /* Space for underline */
+    letter-spacing: 0.5px; /* Clean spacing */
+    line-height: 1.2; /* Optimal line height for readability */
+    font-family: 'Allura', cursive; /* Elegant, curly script font */
+    z-index: 20; /* Ensure title is on top */
+    transition: color 0.50s ease, text-shadow 0.50s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+h1:hover {
+    color: #a8e083; /* Slightly lighter shade of white on hover */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+/* Moving Images Styling */
+.moving-image {
+    position: absolute;
+    width: 120px; /* Slightly larger size */
+    height: 120px; /* Slightly larger size */
+    border-radius: 50%; /* Make images round */
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /* Drop shadow for visibility */
+    opacity: 0.85;
+    transition: transform 0.3s ease, filter 0.3s ease, border 0.3s ease; /* Include border in transition */
+    border: 4px solid #aacebc; /* White border */
+    z-index: 5; /* Ensure images are below the title but above the background */
+}
+
+.moving-image:hover {
+    transform: scale(1.2) rotate(5deg); /* Zoom and slight rotation on hover */
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); /* Enhanced shadow on hover */
+    border: 4px solid #fff; /* Ensure border stays the same on hover */
+}
