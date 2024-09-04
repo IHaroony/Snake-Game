@@ -1,5 +1,15 @@
 # Snake Game
 
+![image](https://github.com/user-attachments/assets/3c8189ea-3658-46fe-919f-c2ae237811de)
+
+![Uploading image.png…]()
+
+
+
+
+
+
+
 ## Description
 This is a classic Snake game implemented using JavaScript and HTML5 Canvas. The game features animated background images, sound effects, and a scoring system. 
 
